@@ -6,7 +6,43 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
+    <item name="toolbarNavigationButtonStyle">@style/myToolbarNavigationButtonStyle</item>
+</style>
+
+<style name="myToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+<item name="android:minWidth">0dp</item>
+<item name="android:minHeight">0dp</item>
+<item name="android:padding">16dp</item>
+<item name="android:scaleType">centerInside</item>
+</style>
+
+<style name="AppTheme.ActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+<item name="colorControlActivated">@color/decisionsupport_color</item>
+<item name="actionMenuTextColor">@color/decisionsupport_color</item>
+<item name="android:color">@color/decisionsupport_color</item>
+<item name="homeAsUpIndicator">@drawable/ic_arrow_left</item>
+<item name="textAllCaps">false</item>
+<item name="android:textAllCaps">false</item>
+<item name="android:textStyle">normal</item>
+<item name="android:textSize">12sp</item>
+<item name="toolbarNavigationButtonStyle">@style/myToolbarNavigationButtonStyle</item>
+</style>
+
+<style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+
+<item name="android:windowNoTitle">true</item>
+<item name="android:fadeEnabled">true</item>
+<item name="android:fadeDuration">1500</item>
+<!--<item name="android:backgroundDimEnabled">false</item>-->
+<item name="android:windowBackground">@android:color/transparent</item>
+<item name="android:innerRadius">30dp</item>
+<item name="android:background">@drawable/shape_main_menu</item>
+<item name="toolbarNavigationButtonStyle">@style/myToolbarNavigationButtonStyle</item>
+</style>
+
+<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
